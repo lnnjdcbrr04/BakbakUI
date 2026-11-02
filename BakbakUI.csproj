@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{785E6B64-233B-4D34-9AD4-2AF1A94DFD00}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BakbakUI</RootNamespace>
+    <AssemblyName>BakbakUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.8, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.4.8\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminCategories.Designer.cs">
+      <DependentUpon>AdminCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminProducts.Designer.cs">
+      <DependentUpon>AdminProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminReports.Designer.cs">
+      <DependentUpon>AdminReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSettings.Designer.cs">
+      <DependentUpon>AdminSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSuppliers.Designer.cs">
+      <DependentUpon>AdminSuppliers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUsers.Designer.cs">
+      <DependentUpon>AdminUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Others.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Others.Designer.cs">
+      <DependentUpon>Others.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kumpuruhus2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kumpuruhus2.Designer.cs">
+      <DependentUpon>Kumpuruhus2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Chickens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chickens.Designer.cs">
+      <DependentUpon>Chickens.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminCategories.resx">
+      <DependentUpon>AdminCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminProducts.resx">
+      <DependentUpon>AdminProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminReports.resx">
+      <DependentUpon>AdminReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSettings.resx">
+      <DependentUpon>AdminSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSuppliers.resx">
+      <DependentUpon>AdminSuppliers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUsers.resx">
+      <DependentUpon>AdminUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Others.resx">
+      <DependentUpon>Others.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kumpuruhus2.resx">
+      <DependentUpon>Kumpuruhus2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Chickens.resx">
+      <DependentUpon>Chickens.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bakbak.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bakbak1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6ef57088-b75b-4b0d-9821-634fbd4d59a3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6ef57088-b75b-4b0d-9821-634fbd4d59a31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48d34515-526c-4872-961c-dee530af4a58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8871201d-8a1b-4beb-b9be-2e3dbc8ceb19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\060e97ec-3c9e-4df1-8c4d-0ce8f188ee5b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b2f2ce2b-9a10-46fd-bd73-c8a47d962032.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003e66ab-f7b4-4206-8c8c-de9efec0e3cb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f2be4207-3bea-4a92-93b0-06144126fb46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lgout.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f303a87e-5423-4a9b-aa70-388be031dc2d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3005d58-6d50-46e6-a655-da1de10ab462.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a874b761-a2f4-488a-861a-ad546ae354ca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b3005d58-6d50-46e6-a655-da1de10ab4621.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1a75c32d-81c3-4ad8-8be2-733dfbeb3044.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbf30b29-b01f-4d39-80e0-557f36115b83.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbf30b29-b01f-4d39-80e0-557f36115b831.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1a75c32d-81c3-4ad8-8be2-733dfbeb30441.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b300b318-5fc2-4331-a496-ac81edf06572.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14995eb8-73fa-4381-a1bf-652bbce2bd09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57177f12-d04d-4484-bd85-e07ed8dddb3f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b139db66-5ed1-4ac3-b946-30e134ccef1a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4407fb70-66fc-44f4-8eb7-7d643fc3447d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21b25ef7-42aa-4d87-9b22-a2db63fc58e2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e1fe42b2-241d-4d50-931c-8adc19c0daef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\356a6c76-1882-425c-a136-99af48fcdff1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\356a6c76-1882-425c-a136-99af48fcdff11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\356a6c76-1882-425c-a136-99af48fcdff12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f73242db-5b60-471b-84e1-2f5f86af73b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2b0b84e4-021b-485a-bb49-7aa0c85ac4b5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dc13346a-e0db-44a6-9258-f33369dd8f52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ebf119ce-3230-40ca-8689-b92144a7e2e5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6e582628-421b-4521-ac91-b86d0e1d82f1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b19a9744-3f0a-45d6-b4aa-579e7248bdd0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\186c107c-1364-48fb-b648-c74e3387208c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\186c107c-1364-48fb-b648-c74e3387208c1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dfeb89f8-f1e2-4435-81df-5ec83590a20f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ba2076b0-7f35-486e-b88e-b40d860c3553.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\73990bd5-75d1-436e-a19b-a6d1391594f2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5b975de9-acb5-4136-a17f-68a09a5414c9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1f5fe09e-8d4a-448b-bf39-e4bb4b913a96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\68f5a552-4a2f-4f93-85dc-8cc290511e2a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1c746a99-322c-4aac-b834-0b45921dbff2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1c746a99-322c-4aac-b834-0b45921dbff21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ae98d654-2495-4b2c-80a3-01f83a0a5e8d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d4975158-f914-4607-bfe6-aecfebf97ead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b34e8cd3-ceda-4547-94be-e849a5c7a7d8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b34e8cd3-ceda-4547-94be-e849a5c7a7d81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2ce509de-cbb4-4dfe-8e27-0ab013a9d5dd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b1ef873b-048a-450e-a0b9-6b3e8b05db1d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\42a127ac-46e0-43da-8626-bbe2a580be53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\97b44d82-1478-4753-85d3-800312c59f09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dffbced9-4b2d-492f-b383-364d96eff539.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
